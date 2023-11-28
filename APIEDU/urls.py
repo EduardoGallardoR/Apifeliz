@@ -23,6 +23,7 @@ from api.views import CheckOut
 
 from api import views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', views.login, name='login'),
@@ -34,3 +35,6 @@ urlpatterns = [
     path('success/', views.success, name='success'),
     path('cancel/', views.cancel, name='cancel'),
 ]
+
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns # new
+urlpatterns += staticfiles_urlpatterns() # new
