@@ -88,6 +88,7 @@ DATABASES = {
     }
 }
 
+DATABASES = {'default': dj_database_url.config(default='postgres://base1_2sc1_user:qPlVrTqrgiVM2QDC5cfhJCfubsG1EE2D@dpg-cln5h69r6k8c73abm1qg-a.oregon-postgres.render.com/base1_2sc1')}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -144,5 +145,4 @@ PAYPAL_RECEIVER_EMAIL= 'sb-tuti228214631@business.example.com'
 PAYPAL_TEST= True
  
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
 
