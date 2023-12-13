@@ -39,6 +39,13 @@ class Pag2 (APIView):
     template_name="pag2.html"
     def get(self,request):
         return render(request,self.template_name)
+
+class Pag3 (APIView):
+    template_name="pag3.html"
+    def get(self,request):
+        return render(request,self.template_name)
+
+
          
 def registro (request):
     if request.method=='POST':
